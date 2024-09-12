@@ -27,8 +27,13 @@ export default function SizeAvatars() {
           About me 
         </AccordionSummary>
         <AccordionDetails>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-          malesuada lacus ex, sit amet blandit leo lobortis eget.
+        Tuhin's Full name is Tuhin Mondal also known by the code name 👦. 
+        tuhinm2002 in many coding platforms like leetcode and codechef and also in github. 
+        He is a 2025 B.Tech grad in the field of Computer Science 🧑‍💻. 
+        He has a great passsion for Backend Developement and Robust systems 💻🖥️.
+        He is also passionate for machine leraning and deep learning research. 
+        He is currently looking forward to build a great career into this. 
+        Hope he will succeed in his dreams 🌫️
         </AccordionDetails>
       </Accordion>
       <Accordion>
@@ -40,8 +45,16 @@ export default function SizeAvatars() {
           My Education
         </AccordionSummary>
         <AccordionDetails>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-          malesuada lacus ex, sit amet blandit leo lobortis eget.
+          <h4>University</h4> 
+          Bachelor of Technology ---------------------- 8/2021 - 7/2025<br/>
+          University of Engineering and Management ---- 8.16 CGPA
+
+          <h4>Schooling</h4>
+          Senior Secondary ---------------------------- 4/2020 - 4/2021<br/>
+          Kendriya Vidyalaya Santragachi -------------- 83 %<br/>
+
+          Secondary ----------------------------------- 4/2018 - 4/2019<br/>
+          Kendriya Vidyalaya Santragachi -------------- 82.6%
         </AccordionDetails>
       </Accordion>
       <Accordion >
