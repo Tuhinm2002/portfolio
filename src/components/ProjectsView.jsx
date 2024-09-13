@@ -23,28 +23,19 @@ const projectData = [
   {
     projectName : "cars-commerce",
     githubLink : 'https://github.com/Tuhinm2002/cars-commerce.git',
-    about : "* Developed a full-stack ecommerce platform using Java Spring (backend) and React (frontend)" +
-            "* Implemented dynamic product listings with an intuitive user interface." + 
-            "* Technologies used: JavaScript (64.0%), Java (27.5%), CSS (6.4%), and HTML (2.1%)" +
-            "* Focused on performance, scalability, and user experience.",
+    about : "Built using Java spring web,H2-database,react,material ui,bootstrap,css,html",
     deployLink : ''
   },
   {
     projectName : "Bert YouTube Sentiment",
     githubLink : "https://github.com/Tuhinm2002/bert_youtube_sentiment.git",
-    about : "* This project is designed to analyze sentiment in comments from any uploaded YouTube video." +
-            "* It focuses on categorizing comments into two main categories: positive and negative sentiments." + 
-            "* Utilizes a fine-tuned model trained on a comprehensive Twitter comments dataset." +
-            "* Deployed on a server environment using advanced technologies like Hugging Face Spaces and Docker." ,
+    about : "Built using Java spring web,H2-database,react,material ui,bootstrap,css,html",
     deployLink : "https://huggingface.co/spaces/Tuhinm2002/bert_youtube_sentiment"
   },
   {
     projectName : "BERTVision",
     githubLink : "https://github.com/Tuhinm2002/BERTVision.git",
-    about : "* This project aims to fuse the realms of Computer Vision and Natural Language Processing." +
-                  "* Utilizing a BERT model, the project discerns emotions from text in real time via computer vision." +
-                  "* Display text before a camera to enable the web app to instantaneously predict and categorize the text." +
-                  "* Deploying via Hugging Face Spaces, and packaging with Docker ensure streamlined management and deployment.",
+    about : "Built using streamlit,pytorch,huggingface dataset,huggingface BERT model",
     deployLink : "https://huggingface.co/spaces/Tuhinm2002/bert-vision"
   },
   {
