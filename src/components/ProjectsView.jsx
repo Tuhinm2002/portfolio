@@ -41,9 +41,7 @@ const projectData = [
   {
     projectName : "Frontend community website",
     githubLink : "https://github.com/Tuhinm2002/website.git",
-    about : "* Developed a front-end project using React JS, HTML, and Tailwind CSS for a Twitter-based software engineering community." +
-            "* Ensured project quality through CI/CD pipelines for continuous integration and delivery."+
-            "* Contributed to open-source development, fostering community engagement and collaboration.",
+    about : "Built using React JS, HTML, and Tailwind CSS ",
     deployLink : "https://tuhinm2002.github.io/website/"
   }
 ]

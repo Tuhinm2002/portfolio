@@ -3,10 +3,13 @@ import Box from '@mui/material/Box';
 import Fab from '@mui/material/Fab';
 import SvgIcon from '@mui/material/SvgIcon';
 import Grid from '@mui/material/Grid2';
+import Typography from '@mui/material/Typography';
 
 export default function FloatingActionButtons() {
   return (
-    <Box sx={{marginTop:'30%',marginLeft:'30%',display:'flex'}}>
+    <Box sx={{marginTop:{xs:'60%',md:'35%',lg:'35%'},marginLeft:'30%',display:'flex',flexDirection:'column'
+    }}>
+        <Typography sx={{marginBottom:{xs:'5%',md:'5%',lg:'5%'},marginLeft:'30%'}}>My tech stack</Typography>
     <Grid
     container  columnSpacing={{ xs: 1, sm: 1, md: 1 }} >
         
