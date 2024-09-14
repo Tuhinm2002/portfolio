@@ -64,6 +64,7 @@ export default function ProjectsView() {
             justifyContent: 'space-around',
             height: 250,
             width: 700,
+            flexDirection:{xs:'column'}
           },
         }}
       >

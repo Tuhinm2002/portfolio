@@ -7,8 +7,8 @@ import Typography from '@mui/material/Typography';
 
 export default function FloatingActionButtons() {
   return (
-    <Box sx={{marginTop:{xs:'60%',md:'35%',lg:'35%'},marginLeft:'30%',display:'flex',flexDirection:'column'
-    }}>
+    <Box sx={{marginTop:{xs:'60%',md:'35%',lg:'35%'},marginLeft:'30%',display:'flex',flexDirection:'column',
+    maxWidth:'100%'}}>
         <Typography sx={{marginBottom:{xs:'5%',md:'5%',lg:'5%'},marginLeft:'30%'}}>My tech stack</Typography>
     <Grid
     container  columnSpacing={{ xs: 1, sm: 1, md: 1 }} >
