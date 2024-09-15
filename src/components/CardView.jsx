@@ -10,8 +10,8 @@ export default function MediaCard(props) {
   return (
     <Card sx={{ maxWidth: 600,height:345,}}>
       <CardMedia
-        sx={{ height: 140 }}
-        image="/static/images/cards/contemplative-reptile.jpg"
+        sx={{ height: 200,maxWidth:600 }}
+        image={props.IMG}
         title={props.projectName}
       />
       <CardContent>
@@ -24,8 +24,8 @@ export default function MediaCard(props) {
         </Typography>
       </CardContent>
       <CardActions>
-        <Button size="small" href={props.deployLink}>Live Demo</Button>
-        <Button size="small" href={props.githubLink}>GitHub</Button>
+        <Button size="small" href={props.DeployLink}>Live Demo</Button>
+        <Button size="small" href={props.GithubLink}>GitHub</Button>
       </CardActions>
     </Card>
   );

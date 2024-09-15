@@ -22,25 +22,29 @@ const projectData = [
       projectName : "cars-commerce",
       githubLink : 'https://github.com/Tuhinm2002/cars-commerce.git',
       about : "Built using Java spring web,H2-database,react,material ui,bootstrap,css,html",
-      deployLink : ''
+      deployLink : '',
+      img : '/src/components/images/bertyou.png'
     },
     {
       projectName : "Bert YouTube Sentiment",
       githubLink : "https://github.com/Tuhinm2002/bert_youtube_sentiment.git",
       about : "Built using Java spring web,H2-database,react,material ui,bootstrap,css,html",
-      deployLink : "https://huggingface.co/spaces/Tuhinm2002/bert_youtube_sentiment"
+      deployLink : "https://huggingface.co/spaces/Tuhinm2002/bert_youtube_sentiment",
+      img : '/src/components/images/bertyou.png'
     },
     {
       projectName : "BERTVision",
       githubLink : "https://github.com/Tuhinm2002/BERTVision.git",
       about : "Built using streamlit,pytorch,huggingface dataset,huggingface BERT model",
-      deployLink : "https://huggingface.co/spaces/Tuhinm2002/bert-vision"
+      deployLink : "https://huggingface.co/spaces/Tuhinm2002/bert-vision",
+      img : '/src/components/images/bertvision.png'
     },
     {
       projectName : "Frontend community website",
       githubLink : "https://github.com/Tuhinm2002/website.git",
       about : "Built using React JS, HTML, and Tailwind CSS ",
-      deployLink : "https://tuhinm2002.github.io/website/"
+      deployLink : "https://tuhinm2002.github.io/website/",
+      img : '/src/components/images/website.png'
     }
   ]
 
@@ -52,8 +56,8 @@ export default function ProjectsView() {
         {Array.from(Array(4)).map((_, index) => (
           <Grid key={index} size={{ xs: 2, sm: 3, md: 3 }} sx={{marginLeft:{xs:'5%',sm:'10%',md:'10%'}}}>
             <MediaCard projectName = {projectData[index].projectName} 
-          githubLink = {projectData[index].githubLink} about = {projectData[index].about}
-          deployLink = {projectData[index].deployLink}/>
+          GithubLink = {projectData[index].githubLink} about = {projectData[index].about}
+          DeployLink = {projectData[index].deployLink} IMG={projectData[index].img}/>
           </Grid>
         ))}
       </Grid>

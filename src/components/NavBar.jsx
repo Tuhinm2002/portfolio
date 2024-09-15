@@ -18,6 +18,7 @@ import { createTheme, ThemeProvider } from '@mui/material/styles';
 
 const drawerWidth = 240;
 const navItems = ['Home', 'About', 'Contact'];
+const links = ['#dp','','']
 
 function Navbar(props) {
   const { window } = props;
