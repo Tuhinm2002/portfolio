@@ -11,13 +11,15 @@ import { Box } from '@mui/material';
 
 export default function SizeAvatars() {
   return (
-    <Box sx={{display:'flex',justifyContent:'center',alignItems:'center',flexDirection:'column',marginTop:'5%' }}>
+    <Box sx={{display:'flex',justifyContent:'center',alignItems:'center',flexDirection:'column',marginTop:{xs:'10%',md:'5%'},
+      marginRight:{xs:'5%'},marginLeft:{xs:'5%'}
+     }}>
       <Avatar
         alt="Remy Sharp"
         src="/src/components/images/mercedes_amg.jpg"
         sx={{ width: 356, height: 356,}}
       />
-      <Box sx={{maxWidth:500,marginTop:'5%'}}>
+      <Box sx={{maxWidth:500,marginTop:'5%',marginLeft:'auto',marginRight:'auto'}}>
       <Accordion defaultExpanded>
         <AccordionSummary
           expandIcon={<ExpandMoreIcon />}

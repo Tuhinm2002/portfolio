@@ -5,7 +5,6 @@ import InstagramIcon from '@mui/icons-material/Instagram';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import XIcon from '@mui/icons-material/X';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
-import Box from '@mui/material/Box';
 
 export default function LabelBottomNavigation() {
   const [value, setValue] = React.useState('githubicon');
@@ -16,7 +15,9 @@ export default function LabelBottomNavigation() {
 
 
   return (
-    <BottomNavigation sx={{ width: '100%',marginTop:'10%',display:'flex',justifyContent:'center',alignItems:'center'}} value={value} onChange={handleChange}>
+    <BottomNavigation sx={{ maxWidth:'100%',marginTop:'10%',display:'flex',justifyContent:'center',alignItems:'center',
+      marginLeft:{xs:'5%',sm:'5%'},marginRight:{xs:'5%',sm:'5%'}
+    }} value={value} onChange={handleChange}>
       <BottomNavigationAction
         label="GitHub"
         value="githubicon"
@@ -35,7 +36,6 @@ export default function LabelBottomNavigation() {
         href='https://github.com/tuhinm2002'
       />
       <BottomNavigationAction label="Instagram" value="instagram" icon={<InstagramIcon />} />
-      <div style={{marginLeft:'50%',marginBottom:0}}>&copy;2024 tuhinm2002. All rights reserved</div>
     </BottomNavigation>
   );
 }

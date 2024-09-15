@@ -1,96 +1,62 @@
 import * as React from 'react';
+import { experimentalStyled as styled } from '@mui/material/styles';
 import Box from '@mui/material/Box';
 import Paper from '@mui/material/Paper';
-import MediaCard from './CardView'
+import Grid from '@mui/material/Grid2';
+import MediaCard from './CardView';
+import Typography from '@mui/material/Typography';
 
-const icon = (
-  <Paper sx={{ m: 1, width: 100, height: 100 }} elevation={4}>
-    <svg>
-      <Box
-        component="polygon"
-        points="0,100 50,00, 100,100"
-        sx={(theme) => ({
-          fill: theme.palette.common.white,
-          stroke: theme.palette.divider,
-          strokeWidth: 1,
-        })}
-      />
-    </svg>
-  </Paper>
-);
+const Item = styled(Paper)(({ theme }) => ({
+  backgroundColor: '#fff',
+  ...theme.typography.body2,
+  padding: theme.spacing(2),
+  textAlign: 'center',
+  color: theme.palette.text.secondary,
+  ...theme.applyStyles('dark', {
+    backgroundColor: '#1A2027',
+  }),
+}));
 
 const projectData = [
-  {
-    projectName : "cars-commerce",
-    githubLink : 'https://github.com/Tuhinm2002/cars-commerce.git',
-    about : "Built using Java spring web,H2-database,react,material ui,bootstrap,css,html",
-    deployLink : ''
-  },
-  {
-    projectName : "Bert YouTube Sentiment",
-    githubLink : "https://github.com/Tuhinm2002/bert_youtube_sentiment.git",
-    about : "Built using Java spring web,H2-database,react,material ui,bootstrap,css,html",
-    deployLink : "https://huggingface.co/spaces/Tuhinm2002/bert_youtube_sentiment"
-  },
-  {
-    projectName : "BERTVision",
-    githubLink : "https://github.com/Tuhinm2002/BERTVision.git",
-    about : "Built using streamlit,pytorch,huggingface dataset,huggingface BERT model",
-    deployLink : "https://huggingface.co/spaces/Tuhinm2002/bert-vision"
-  },
-  {
-    projectName : "Frontend community website",
-    githubLink : "https://github.com/Tuhinm2002/website.git",
-    about : "Built using React JS, HTML, and Tailwind CSS ",
-    deployLink : "https://tuhinm2002.github.io/website/"
-  }
-]
-
+    {
+      projectName : "cars-commerce",
+      githubLink : 'https://github.com/Tuhinm2002/cars-commerce.git',
+      about : "Built using Java spring web,H2-database,react,material ui,bootstrap,css,html",
+      deployLink : ''
+    },
+    {
+      projectName : "Bert YouTube Sentiment",
+      githubLink : "https://github.com/Tuhinm2002/bert_youtube_sentiment.git",
+      about : "Built using Java spring web,H2-database,react,material ui,bootstrap,css,html",
+      deployLink : "https://huggingface.co/spaces/Tuhinm2002/bert_youtube_sentiment"
+    },
+    {
+      projectName : "BERTVision",
+      githubLink : "https://github.com/Tuhinm2002/BERTVision.git",
+      about : "Built using streamlit,pytorch,huggingface dataset,huggingface BERT model",
+      deployLink : "https://huggingface.co/spaces/Tuhinm2002/bert-vision"
+    },
+    {
+      projectName : "Frontend community website",
+      githubLink : "https://github.com/Tuhinm2002/website.git",
+      about : "Built using React JS, HTML, and Tailwind CSS ",
+      deployLink : "https://tuhinm2002.github.io/website/"
+    }
+  ]
 
 export default function ProjectsView() {
-  const [checked, setChecked] = React.useState(false);
-
-  const handleChange = () => {
-    setChecked((prev) => !prev);
-  };
-
   return (
-    <Box sx={{ height: 300,margin:'15%',display:'flex',alignItems:'center',justifyContent:'center'}}>
-    
-      <Box
-        sx={{
-          '& > :not(style)': {
-            display: 'flex',
-            justifyContent: 'space-around',
-            height: 250,
-            width: 700,
-            // justifyContent:'center',
-            // alignItems:'center',
-            flexDirection:{xs:'column',md:'row'}
-          },
-        }}
-      >
-        <Box>
-          <Box><MediaCard projectName = {projectData[0].projectName} 
-          githubLink = {projectData[0].githubLink} about = {projectData[0].about}
-          deployLink = {projectData[0].deployLink}/></Box>
-          <Box><MediaCard projectName = {projectData[1].projectName} 
-          githubLink = {projectData[1].githubLink} about = {projectData[1].about}
-          deployLink = {projectData[1].deployLink}/></Box>
-        </Box>
-        <Box>
-          <Box sx={{ width: '100%',marginTop:'15%' }}>
-            <MediaCard projectName = {projectData[2].projectName} 
-          githubLink = {projectData[2].githubLink} about = {projectData[2].about}
-          deployLink = {projectData[2].deployLink}/>
-          </Box>
-          <Box sx={{ width: '100%',marginTop:'15%' }}>
-              <MediaCard projectName = {projectData[3].projectName} 
-          githubLink = {projectData[3].githubLink} about = {projectData[3].about}
-          deployLink = {projectData[3].deployLink}/>
-          </Box>
-        </Box>
-      </Box>
+    <Box sx={{flexGrow: 1,display:'flex',alignItems:'center',justifyContent:'center',marginTop:{xs:'10%'},flexDirection:'column',marginRight:{xs:'5%'} }}>
+        <Typography>My Projects</Typography>
+      <Grid container spacing={{ xs: 2, md: 2 }} columns={{ xs: 2, sm: 8, md: 12 }}>
+        {Array.from(Array(4)).map((_, index) => (
+          <Grid key={index} size={{ xs: 2, sm: 3, md: 3 }} sx={{maxWidth:{xs:'500'},marginLeft:{xs:'5%',sm:'5%',md:'none'}}}>
+            <MediaCard projectName = {projectData[index].projectName} 
+          githubLink = {projectData[index].githubLink} about = {projectData[index].about}
+          deployLink = {projectData[index].deployLink}/>
+          </Grid>
+        ))}
+      </Grid>
     </Box>
   );
 }
