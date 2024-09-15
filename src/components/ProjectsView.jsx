@@ -47,10 +47,10 @@ const projectData = [
 export default function ProjectsView() {
   return (
     <Box sx={{flexGrow: 1,display:'flex',alignItems:'center',justifyContent:'center',marginTop:{xs:'10%'},flexDirection:'column',marginRight:{xs:'5%'} }}>
-        <Typography>My Projects</Typography>
-      <Grid container spacing={{ xs: 2, md: 2 }} columns={{ xs: 2, sm: 8, md: 12 }}>
+        <Typography variant='h3' sx={{marginTop:'5%',marginBottom:'5%'}}>My Projects</Typography>
+      <Grid container spacing={{ xs: 2, md: 2 }} columns={{ xs: 2, sm: 8, md: 8 }}>
         {Array.from(Array(4)).map((_, index) => (
-          <Grid key={index} size={{ xs: 2, sm: 3, md: 3 }} sx={{maxWidth:{xs:'500'},marginLeft:{xs:'5%',sm:'5%',md:'none'}}}>
+          <Grid key={index} size={{ xs: 2, sm: 3, md: 3 }} sx={{marginLeft:{xs:'5%',sm:'10%',md:'10%'}}}>
             <MediaCard projectName = {projectData[index].projectName} 
           githubLink = {projectData[index].githubLink} about = {projectData[index].about}
           deployLink = {projectData[index].deployLink}/>
