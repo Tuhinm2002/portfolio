@@ -7,14 +7,12 @@ import Typography from '@mui/material/Typography';
 
 export default function FloatingActionButtons() {
   return (
-    <Box sx={{marginTop:{xs:'60%',md:'35%',lg:'35%'},marginLeft:'30%',display:'flex',flexDirection:'column',
-    maxWidth:'100%'}}>
-        <Typography sx={{marginBottom:{xs:'5%',md:'5%',lg:'5%'},marginLeft:'30%'}}>My tech stack</Typography>
+    <Box sx={{display:'flex',justifyContent:'center',alignItems:'center',flexDirection:'column',marginTop:'10%'}}>
+        
+        <Typography sx={{marginBottom:'5%',marginTop:'10%'}}>My tech stack</Typography>
     <Grid
     container  columnSpacing={{ xs: 1, sm: 1, md: 1 }} >
-        
-        
-        <Grid size={4} >
+        <Grid size={2} >
         <Box sx={{ '& > :not(style)': { m: 1 } }}>
         <Fab color="primary" aria-label="js">
             <SvgIcon>
@@ -25,7 +23,7 @@ export default function FloatingActionButtons() {
         </Grid>
         
         
-        <Grid size={4}>
+        <Grid size={2}>
         <Box sx={{ '& > :not(style)': { m: 1 } }}>
         <Fab color="primary" aria-label="java">
             <SvgIcon>
@@ -36,7 +34,7 @@ export default function FloatingActionButtons() {
         </Grid>
 
         
-        <Grid size={4} >
+        <Grid size={2} >
         <Box sx={{ '& > :not(style)': { m: 1 } }}>
         <Fab color="primary" aria-label="python">
             <SvgIcon>
@@ -47,7 +45,7 @@ export default function FloatingActionButtons() {
         </Grid>
 
 
-        <Grid size={4}>
+        <Grid size={2}>
         <Box sx={{ '& > :not(style)': { m: 1 } }}>
         <Fab color="primary" aria-label="react">
             <SvgIcon>
@@ -57,7 +55,7 @@ export default function FloatingActionButtons() {
         </Box>
         </Grid>
 
-        <Grid size={4}>
+        <Grid size={2}>
         <Box sx={{ '& > :not(style)': { m: 1 } }}>
         <Fab color="primary" aria-label="spring">
             <SvgIcon>
@@ -70,7 +68,7 @@ export default function FloatingActionButtons() {
         </Grid>
 
         
-        <Grid size={4} >
+        <Grid size={2} >
         <Box sx={{ '& > :not(style)': { m: 1 } }}>
         <Fab color="primary" aria-label="bash">
             <SvgIcon>
@@ -83,7 +81,7 @@ export default function FloatingActionButtons() {
         </Grid>
 
 
-        <Grid size={4} >
+        <Grid size={2} >
         <Box sx={{ '& > :not(style)': { m: 1 } }}>
         <Fab color="primary" aria-label="bash">
             <SvgIcon>
@@ -97,7 +95,7 @@ export default function FloatingActionButtons() {
 
         
         
-        <Grid size={4}>
+        <Grid size={2}>
         <Box sx={{ '& > :not(style)': { m: 1 } }}>
         <Fab color="primary" aria-label="pytorch">
             <SvgIcon>
@@ -108,7 +106,7 @@ export default function FloatingActionButtons() {
         </Grid>
 
         
-        <Grid size={4}>
+        <Grid size={2}>
         <Box sx={{ '& > :not(style)': { m: 1 } }}>
         <Fab color="primary" aria-label="docker">
             <SvgIcon>
@@ -119,7 +117,7 @@ export default function FloatingActionButtons() {
         </Grid>
 
         
-        <Grid size={4}>
+        <Grid size={2}>
         <Box  sx={{ '& > :not(style)': { m: 1 } }}>
         <Fab color="primary" aria-label="bootstrap">
             <SvgIcon>
@@ -129,7 +127,7 @@ export default function FloatingActionButtons() {
         </Box>
         </Grid>
 
-        <Grid size={4}>
+        <Grid size={2}>
         <Box  sx={{ '& > :not(style)': { m: 1 } }}>
         <Fab color="primary" aria-label="cpp">
             <SvgIcon>
@@ -139,7 +137,7 @@ export default function FloatingActionButtons() {
         </Box>
         </Grid>
 
-        <Grid size={4}>
+        <Grid size={2}>
         <Box  sx={{ '& > :not(style)': { m: 1 } }}>
         <Fab color="primary" aria-label="cpp">
             <SvgIcon>

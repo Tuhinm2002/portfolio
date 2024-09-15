@@ -16,7 +16,7 @@ export default function LabelBottomNavigation() {
 
 
   return (
-    <BottomNavigation sx={{ width: '100%',marginTop:'10%' }} value={value} onChange={handleChange}>
+    <BottomNavigation sx={{ width: '100%',marginTop:'10%',display:'flex',justifyContent:'center',alignItems:'center'}} value={value} onChange={handleChange}>
       <BottomNavigationAction
         label="GitHub"
         value="githubicon"

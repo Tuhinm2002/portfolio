@@ -55,7 +55,7 @@ export default function ProjectsView() {
   };
 
   return (
-    <Box sx={{ height: 300,marginTop: 25,marginLeft:{xs:'5%',md:'30%'},maxWidth:300}}>
+    <Box sx={{ height: 300,margin:'15%',display:'flex',alignItems:'center',justifyContent:'center'}}>
     
       <Box
         sx={{
@@ -64,6 +64,8 @@ export default function ProjectsView() {
             justifyContent: 'space-around',
             height: 250,
             width: 700,
+            // justifyContent:'center',
+            // alignItems:'center',
             flexDirection:{xs:'column',md:'row'}
           },
         }}
